@@ -14,10 +14,8 @@ class DataManager:
         self.destination_data = {}
 
     def get_destination_data(self):
-        # 2. Use the Sheety API to GET all the data in that sheet and print it out.
         response = requests.get(url=SHEETY_PRICES_ENDPOINT)
         data = response.json()
-        # 3. Try importing pretty print and printing the data out again using pprint() to see it formatted.
         self.destination_data = data["prices"]
         return self.destination_data
 
