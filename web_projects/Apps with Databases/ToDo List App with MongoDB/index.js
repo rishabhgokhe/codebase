@@ -48,14 +48,12 @@ app.get("/", async (req, res) => {
   try {
     const data = await Item.find({});
     if (data.length === 0 ) {
-      Item.insertMany([item1, item2, item3], (err) => {
-        if (err) {
-          console.log(err);
-        } else {
-          console.log("Successfully saved default items")
-        }
-      });
-      res.redirect("/");
+      try {
+        await Item.insertMany([item1, item2, item3]);
+        res.redirect("/");
+      } catch (err) {
+        console.log(err);
+      }
     } else {
       res.render("index.ejs", {
         listTitle: "Today",
