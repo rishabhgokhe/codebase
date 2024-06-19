@@ -23,8 +23,12 @@ public class Car {
         return convertible;
     }
 
+    public void setCompany(String company) {
+        this.company = company;
+    }
+
     public void carData() {
-        System.out.println("Doors = " + doors + " " + company + " " + model + " " + color + " " + convertible);
+        System.out.println("Doors " + doors + " " + company + " " + model + " " + color + " " + convertible);
     }
 
 }
