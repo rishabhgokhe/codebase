@@ -1,5 +1,9 @@
 public class Main {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        Person person = new Person();
+        person.setFirstName("Rishabh");
+        person.setAge(20);
+        person.setLastName("Gokhe");
+        System.out.println(person.getFullName());
     }
 }

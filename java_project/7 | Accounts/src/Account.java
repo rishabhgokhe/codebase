@@ -6,6 +6,19 @@ public class Account {
     private String customerEmail;
     private int customerPhone;
 
+    public Account() {
+        this(647920286, 5473, "Rishabh", "rishabhgokhe@gmail.com", 872879379);
+        System.out.println("Constructor Working");
+    }
+
+    public Account(int accountNumber, double balance, String customerName, String customerEmail, int customerPhone) {
+        System.out.println("Constructor with parameters");
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.customerName = customerName;
+        this.customerEmail = customerEmail;
+        this.customerPhone = customerPhone;
+    }
 
     public void depositFunds(double depositAmount) {
         this.balance += depositAmount;
