@@ -1,5 +1,5 @@
 public class Point {
-    private int  x;
+    private int x;
     private int y;
 
     public Point() {
@@ -18,7 +18,7 @@ public class Point {
     public int getY() {
         return y;
     }
-    
+
     public void setX(int x) {
         this.x = x;
     }
@@ -27,5 +27,15 @@ public class Point {
         this.y = y;
     }
 
-    
+    public double distance() {
+        return Math.sqrt(x * x + y * y);
+    }
+
+    public double distance(Point other) {
+        return distance(other.getX(), other.getY());
+    }
+
+    public double distance(int x, int y) {
+        return Math.sqrt((this.x - x) * (this.x - x) + (this.y - y) * (this.y - y));
+    }
 }
