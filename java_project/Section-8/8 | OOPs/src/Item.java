@@ -40,5 +40,8 @@ public class Item {
         printItem(getName(), getAdjustedPrice());
     }
 
+    public String getType() {
+        return type;
+    }
 
 }
