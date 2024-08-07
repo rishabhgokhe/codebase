@@ -13,7 +13,10 @@ public class App {
         LinkedList<Place> placesToVisit = new LinkedList<>();
         Place delhi = new Place("Delhi", 1200);
         addPlace(placesToVisit, delhi);
-        addPlace(placesToVisit, new Place("Delhi", 1200));
+        addPlace(placesToVisit, new Place("Mumbai", 1400));
+        addPlace(placesToVisit, new Place("Kolkata", 1500));
+        addPlace(placesToVisit, new Place("Chennai", 1600));
+
         System.out.println(placesToVisit);
 
         var iterator = placesToVisit.listIterator();
@@ -22,19 +25,52 @@ public class App {
         boolean forward = true;
 
         printMenu();
-        
+
         while (!quitLoop) {
+            if (!iterator.hasPrevious()) {
+                System.out.println("Originating : " + iterator.next());
+                forward = true;
+            }
+            if (!iterator.hasNext()) {
+                System.out.println("Final : " + iterator.previous());
+                forward = false;
+            }
+
             System.out.print("Enter your choice: ");
             String menuItem = scanner.nextLine().toUpperCase().substring(0, 1);
-            
+
             switch (menuItem) {
-                case "F": System.out.println("User wants to go forward"); break;
-                case "B": System.out.println("User wants to go Backwards"); break;
+                case "F":
+                    if (!forward) {   // Reversing Direction
+                        forward = true;
+                        if (iterator.hasNext()) {
+                            iterator.next();   // Adjusting position forwards
+                        }
+                    }
+                    if (iterator.hasNext()) {
+                        System.out.println("Your next location is " + iterator.next());
+                    }
+                    break;
+
+                case "B":
+                    if (forward) {    // Reversing Direction
+                        forward = false;
+                        if (iterator.hasPrevious()) {
+                            iterator.previous();  // Adjusting position backward
+                        }
+                    }
+                    if (iterator.hasPrevious()) {
+                        System.out.println("Your previous location was " + iterator.previous());
+                    }
+                    break;
+
                 case "L": System.out.println(placesToVisit); break;
                 case "M": printMenu(); break;
                 default: quitLoop = true; break;
             }
         }
+
+        scanner.close();
 
     }
 
