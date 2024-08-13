@@ -58,7 +58,7 @@ You can clone this repository and explore the different projects and solutions. 
 To clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/your-repository-name.git
+git clone https://github.com/rishabhgokhe/codebase.git
 cd your-repository-name
 ```
 

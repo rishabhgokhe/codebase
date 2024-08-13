@@ -1,6 +1,5 @@
-class Solution {
+class SpiralMatrixIII_855 {
     public int[][] spiralMatrixIII(int rows, int cols, int rStart, int cStart) {
-
         // defining 2 dimensional matrix with each array element containing a cordinate array
         int[][] result = new int[rows * cols][2];
         // defines the direction for position to move right, down , left, up
