@@ -1,16 +1,47 @@
-# My Learning & Practice Repository
+# 📚 Learning & Practice Repository
 
-Welcome to my repository where I store all my practice questions and learning projects! This is a collection of code, projects, and notes that I have worked on to improve my skills in various programming languages, frameworks, and technologies.
+Welcome to my personal learning repository.  
+This repository is primarily focused on **Java Data Structures & Algorithms (DSA)**, where I regularly store important questions, concepts, and problem-solving patterns useful for interviews and strong fundamentals.
 
-## About
+Along with Java DSA, this repo also contains practice work and mini projects from other languages and technologies I’ve explored during my learning journey.
 
-This repository is a personal collection of coding challenges, algorithms, data structures, and mini-projects that I have completed while learning new concepts. It serves as both a reference for myself and a showcase of my progress in programming and software development.
+---
 
-## Structure
+## 🎯 Purpose of This Repository
 
-The repository is organized by folders, each containing projects and practice questions related to a specific topic or language.
+- Build strong **DSA fundamentals in Java**
+- Practice **frequently asked interview questions**
+- Organize concepts in a **topic-wise structured manner**
+- Maintain a **revision-friendly reference**
+- Track consistent progress over time
 
+This is not random code — every folder reflects intentional learning.
+
+---
+
+## 🧠 Current Focus
+
+### Java Data Structures & Algorithms (Primary)
+
+Currently working on:
+- Topic-wise DSA questions
+- Core Java concepts required for problem solving
+- Common patterns used in interviews and competitive programming
+
+---
+
+## 📁 Repository Structure
 ```.
+└── Java/
+    ├── DSA
+        └── Arrays
+        └── Monotonic Stack
+        └── .../
+    ├── OOPs/
+        └── Inheritance
+        └── Polymorphism
+        └── .../
+    ├── .../
 └── Swift/
     ├── Basics/
         └── Switch/
@@ -18,14 +49,6 @@ The repository is organized by folders, each containing projects and practice qu
         ├── Quiz/
         ├── Story Teller/
         └── .../
-└── Java/
-    ├── Section-7: Inheritance/
-        └── .../
-    ├── Section-8: Polymorphism/
-        └── .../
-    ├── Section-9: Arrays/
-        └── .../
-    ├── .../
 └── Python/
     ├── Quiz App/
     ├── Habit Tracker Project/
@@ -40,7 +63,9 @@ The repository is organized by folders, each containing projects and practice qu
 └── .gitignore
 ```
 
-Each folder contains subdirectories and files that are specific to the topic. For example, the Algorithms folder might contain files for sorting algorithms, while the Projects folder contains more extensive applications.
+Each folder is structured to keep learning clean, searchable, and revision-friendly.
+
+---
 
 ## Languages & Tools
 
@@ -48,18 +73,17 @@ Here are some of the languages and tools that you'll find in this repository:
 
 - **Languages**: Java, JavaScript, Python, TypeScript, Swift, HTML, CSS, SQL
 - **Frameworks & Libraries**: React, Node.js, Express
-- **Tools**: Git, VSCode, npm, Docker
+- **Tools**: Git, VSCode, npm, IntelliJ IDEA IDE
 
+---
 
-## How to Use
+## 🚀 How to Use
 
-You can clone this repository and explore the different projects and solutions. If you're interested in a specific topic, navigate to the corresponding folder. Each project or solution may include its own README with more details.
-
-To clone the repository:
+Clone the repository and explore topics based on your learning needs.
 
 ```bash
 git clone https://github.com/rishabhgokhe/codebase.git
-cd your-repository-name
+cd codebase
 ```
 
 ## Contributing
