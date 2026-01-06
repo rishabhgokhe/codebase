@@ -7,6 +7,10 @@ Along with Java DSA, this repo also contains practice work and mini projects fro
 
 ---
 
+
+For structured, pattern-wise DSA questions practice, refer to:  
+https://github.com/priyanshuf11/DSA_Questions_Solutions
+
 ## 🎯 Purpose of This Repository
 
 - Build strong **DSA fundamentals in Java**
